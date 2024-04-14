@@ -2309,10 +2309,11 @@ body {
 .sidebar-position-right .footer-inner:before {
   float: right;
 }
+/*Chen首页颜色黑色主页背景修改 绿色 background: #0c0; 默认#222黑色*/
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #222;
+  background: #0c0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
