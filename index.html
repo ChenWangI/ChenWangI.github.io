@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <!--  添加首页Logo标题图标-放根目录即可 规格 32x32 -->
@@ -5,189 +6,711 @@
 <title>陳心做官网 Cxinz.com</title>
 <!--   网站首页标题（必填）：替换为你的标题，含核心关键词 -->
 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<!-- Chen活动快速标记 先引入全局变量脚本（放在<head>，确保所有元素加载前变量已定义） -->
+<head>
+<script>
+ window.GLOBAL_TEXT = {
+
+   
+
+
+   HDtime: "      至11月17日                ",
+
+
+
+   DPhd1: "    19.8一箱暁蜜瓜       ",
+   DPhd2: "    18.8一箱羊角瓜       ",
+   DPhd3: "    17.7一箱小番茄       ",
+
+
+
+   DYhd1: "    9.9一袋甜香梨          ",
+   DYhd2: "    9.9一袋火龙果        ",
+   DYhd3: "    9.9一盒菇娘果        ",
+
+
+
+   MThd1: "    0.01一盒果奶捞          ",
+   MThd2: "    0.01一盒羊角瓜        ",
+   MThd3: "    0.01一盒网纹瓜       ",
+
+
+   ELMhd1: "   0.01一盒果捞          ",
+   ELMhd2: "   0.01一盒羊瓜        ",
+   ELMhd3: "   0.01一盒网瓜        ",
 
 
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<style type="text/css">
-      *{
-        margin: 0;
-        padding: 0;
-      }
-
-      #left {
-        float: left;
-        width: 220px;
-        //background-color: green;
-      }
-
-      #content {
-        //background-color: orange;
-        margin-left: 220px;/*==等于左边栏宽度==*/
-      }
-    </style>
 
 
 
 
-<script type = 'text/javascript'>
-function chgFrame( url )
-{
-  frames[0].location.href=url;
+
+ 
+ };
+ // 修复：用addEventListener避免onload覆盖，支持多次调用
+ function renderGlobalText(id) {
+   window.addEventListener('load', function() { // 替换window.onload为addEventListener
+     const elem = document.getElementById(id);
+     if (elem) elem.innerText = window.GLOBAL_TEXT[id];
+   });
+ }
+ </script>
+
+
+
+
+
+
+<style>
+         /* 全局通用背景色类（全网站可复用）Chen颜色 */
+         .TDColor { background-color: #eafae8; } /* 主色  白绿 */
+         .bg-secondary { background-color: #90ee90; } /* 辅助色（果绿） */
+         .bg-accent { background-color: #ffd700; } /* 强调色（果黄） */
+         /* TD基础样式（统一单元格风格）此处不想用隐藏 */
+/*         td { padding: 8px 12px; border: 1px solid #eee; }*/
+     </style>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   修改网站全背景草绿 #a0fc99 -->
+<style type="text/css">  
+#Layer1 {
+  Z-INDEX: 1; POSITION: absolute; WIDTH: 634px; HEIGHT: 115px; TOP: 60px; LEFT: 461px
 }
-  document.write( "无投入 必挣到 &nbsp;" + Date() );
+BODY { 
+  BACKGROUND-IMAGE: url(/BGR.png); BACKGROUND-COLOR: #a0fc99; td: "center" class="STYLE85"></td>
+  background-repeat: no-repeat
+}
+BODY {
+  COLOR: #ffff00; FONT-SIZE: 12px
+}
+TD {
+  COLOR: #ffff00; FONT-SIZE: 12px
+}
+TH {
+  COLOR: #ffff00; FONT-SIZE: 12px
+}
+.bodydiv {  BORDER-BOTTOM: #ff6600 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #ff6600 1px solid; PADDING-BOTTOM: 1em; BACKGROUND-COLOR: #ffffff; MARGIN: 2em auto 0px; PADDING-LEFT: 1em; WIDTH: 780px; BACKGROUND-ATTACHMENT: fixed; PADDING-RIGHT: 1em; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center top; BORDER-TOP: #ff6600 5px solid; BORDER-RIGHT: #ff6600 1px solid; PADDING-TOP: 1em
+}
+.STYLE150 { font-size: 28px}
+.STYLE22 {  COLOR: #009900
+}
+
+
+/*此处活动类样式调用设置修改全局类 红#eb3169 暗绿 #216637*/
+
+.STYLE37  {color: #216637;; font-size: 28px; font-weight: bold; }
+
+.STYLEC1  {color: #216637;; font-size: 19px; font-weight: bold; }
+
+
+
+
+.DPhdColor  {color: #eb3169;; font-size: 23px; font-weight: bold; }
+
+.DYhdColor  {color: #3e57f7;; font-size: 23px; font-weight: bold; }
+
+.MThdColor  {color: #3e57f7;; font-size: 23px; font-weight: bold; }
+
+.ELMhdColor {color: #3e57f7;; font-size: 23px; font-weight: bold; }
+
+
+
+
+
+
+.STYLE38 {  COLOR: #565c55
+}
+
+
+
+
+
+
+
+
+
+.STYLE8 { COLOR: #0000ff
+}
+.STYLE83 {  COLOR: #0066ff; FONT-WEIGHT: bold
+}
+.STYLE96 {  COLOR: #ff0000; FONT-WEIGHT: bold
+}
+.STYLE99 {  COLOR: #333366
+}
+.STYLE153 {COLOR: #FF0000; FONT-WEIGHT: bold; }
+.style156 {color: #FFFFFF; font-size: 18px; font-weight: bold; }
+.STYLE159 {font-size: 22px; color: #FF00FF; }
+
+
+/*此处公告类样式调用设置修改全局类  暗绿 #216637*/
+.STYLE160 {
+  font-family: Arial, sans-serif; font-size: 25px;
+  color: #216637;
+}
+
+.STYLEC2 {
+  font-family: Arial, sans-serif; font-size: 20px;
+  color: #ff0066;
+}
+
+
+
+.STYLE163 {color: #0000FF}
+.STYLE165 {color: #0066FF}
+.STYLE166 {color: #CC00FF}
+.STYLE167 {COLOR: #CC00FF; FONT-WEIGHT: bold; }
+</style>
+
+</head>
+
+
+
+<body>
+<!-- <table width="900" height="388"  border="0" align="center" bgcolor="#FFFFFF"> 原代码无预留顶部空间 现代码已完成-->
+
+
+ <table  style="width: 900px; height: 388px; margin: 188px auto 0; background: #FFFFFF; border: none;"> 
+  <tbody><tr>
+    <td height="384"><table width="200" border="0">
+      <tbody><tr>
+        <td>　</td>
+      </tr>
+    </tbody></table>
+      <table width="811" height="184" border="6" align="center" cellpadding="0" cellspacing="0" bordercolor="#a0fc99" bgcolor="#039e22"> <!--  此处 11个像素描边 现草绿 #a0fc99 底部横线墨绿 bgcolor="#039e22"  原黄色"#996600"  白色隐藏 #ffffff  -->
+      <tbody><tr>
+        <td width="800" height="200"><img src="./1zcq.566mir.top_files/LOGO.png" width="800" height="300"></td>
+      </tr>
+
+
+    </tbody></table>
+      <table width="200" border="0">
+        <tbody><tr>
+          <td>　</td>
+        </tr>
+
+
+
+                    <!--  公告展示  蓝暗紫 84868C 原黄色  #996600  此处调用全局类样式颜色 class="STYLE160">  -->  
+
+      </tbody></table>
+      <table width="815"  align="center" bordercolor="#8ed989" bgcolor="#a0fc99" border="3" >
+        <tbody><tr>
+          <td height="100"><div align="center" class="STYLE37"><span class="STYLE37">  <span class="STYLE37">欢迎来到 陳心做官网 用陳心对待 每一次相遇 越努力越幸运哦</span></span></div></td>
+
+    
+        </tr>
+
+
+      </tbody></table>
+      <table width="200" border="0">
+        <tbody><tr>
+          <td>　</td>
+        </tr>
+      </tbody></table>
+
+
+
+      <table width="820" border="0" align="center" bordercolor="#84868C">
+        <tbody><tr> 
+
+          <td height="47"><div align="right">
+
+
+            <!--  抖音美团饿了么图片添加地方 自定义表格修改大小 240*240-->
+
+            <a href="https://www.douyin.com/user/MS4wLjABAAAAaZyfUwNmmtnMWdBi3rwtupo-dhOLvoWNAfNE3HsmrCM?from_tab_name=main">
+              <img border="0" src="./1zcq.566mir.top_files/DY1.png" tppabs="DY1.png" width="240" height="240">
+
+
+            </a></div></td>
+          <td><div align="center">
+
+            <a href="https://cactivityapi-sc.waimai.meituan.com/h5/sub-trade/restaurant/restaurant?source=searchresult&poi_id_str=MFwhfEwnQ0S2cm5Ful-AKAI&poi_id=-100&initialLng=121.488606&initialLat=29.67663&channel=default&actualLng=121.488606&actualLat=29.67663">
+            
+            <img border="0" src="./1zcq.566mir.top_files/MT2.png" tppabs="MT2.png" width="240" height="240"></a></div></td>
+
+
+
+          <td height="47"><div align="right">
+            <a href="https://h5.ele.me/newretail/p/ushop/?store_id=20000034394&ele_id=E17210236292698947781&isSelfFetch=2&fetchType=2&trace_id=2147859217619750105534590e4243&venusSupplyChannelSource=b_ele%3Acommon_store_render&geolat=29.645315&geolng=121.402396&_trans_track_id=20000034394_0_930397093591867&hideNavbar=1&status_bar_transparent=true&disableNav=YES&spm=a2f6g.12273696.SuggestRestaurant.1&guideTrack=%257B%2522search_ab_bucket%2522%253A%2522a%2522%252C%2522search_tpp_buckets%2522%253A%252228820%25230%2523255357%252312_28820%252314775%2523456865%25233_28820%252326258%2523480297%252313_28820%252325617%2523478566%25237_28820%252325745%2523478804%25231_28820%252324768%2523475605%252315_18534%25230%2523413075%25239_18534%25232939%25238588%252310_18534%252359051%2523531153%252314_18534%252328309%2523485342%252310_18534%252326394%2523480328%25234%2522%252C%2522search_app_id%2522%253A28820%252C%2522alscJointAbTag%2522%253A%2522unknow%2522%252C%2522search_trace_id%2522%253A%25222147859217619750105534590e4243%2522%252C%2522personalizedDisable%2522%253Afalse%252C%2522search_rank_id%2522%253A%2522554552dfaa1b493b980cc15cdab34ddf%2522%257D&from=mobile.default&fromVersion=11.22.6&longitude=121.402396&latitude=29.645315&geohash=wtq2dsf82z78&spm-pre=a2f6g.12507204.search.1" target="_blank">
+
+
+            <img border="0" src="./1zcq.566mir.top_files/ELM3.png" tppabs="ELM3.png" width="280" height="240"></a></div></td>
+
+
+           <hr width="900"> <!-- 白线一条900像素 --> 
+          </tr>
+
+
+
+
+
+      </tbody></table>
+      <table width="200" border="0">
+        <tbody>
+
+           <!-- 本地时间显示容器 -->
+<div style="text-align: center; font-size: 30px; color: #216637;" id="localTime"></div>
+
+<script>
+// 格式化并更新本地时间
+function updateLocalTime() {
+  const now = new Date();
+  // 格式：年-月-日 时:分:秒（补零对齐）
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); // 月份0-11，需+1
+  const day = String(now.getDate()).padStart(2, '0');
+  const hour = String(now.getHours()).padStart(2, '0');
+  const minute = String(now.getMinutes()).padStart(2, '0');
+  const second = String(now.getSeconds()).padStart(2, '0');
+  
+  const formattedTime = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+  document.getElementById('localTime').innerText = `活动时间：${formattedTime}`;
+}
+
+// 初始加载+每秒更新
+updateLocalTime();
+setInterval(updateLocalTime, 1000);
 </script>
 
 
+<!-- 结束时间 全局HDtime -->
+<div style="text-align: center; font-size: 30px; color: #216637;" id="HDtime"></div>
+<script>renderGlobalText("HDtime");</script> 
+
+
+
+          <tr>
+          <td>　
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 
 
 
-<div id="left"> <p style="text-align: center"> 陳心挣 
 
-<table width=100% height=100% border="1">
+  <table  align="center"cellspacing="1" cellpadding="5" width="815" height="400" bgcolor="#a0fc99" bordercolor="#8ed989" border="3" >
+        <tbody>
+          <tr align="middle" bgcolor="#a0fc99">
+            <td height="47" width="207"><div class="STYLE37" align="center">店铺活动</div></td>
+            <td height="47" width="172"><div class="STYLE37" align="center">抖音活动</div></td>
+            <td height="47" width="239"><div class="STYLE37" align="right">
+                <div align="center">美团活动</div>
+            </div></td>
+            <td width="152"><div class="STYLE37" align="center"> 饿了么活动</div></td>
+          </tr>
+          
 
+          <!-- Chen活动快速标记  店铺活动第一行3个全部下面开始设置 -->
 
-<tr>
-<td> <p> &nbsp;  
-     <p style="text-align: center"> <a href="https://tb.ele.me/wow/ele-ad/act/elmtkhd?wh_biz=tm&from=cps_tk&ali_trackid=2:mm_29832719_1398700384_110142100081:1584716477_299_1242920129&e=-s02221MWknFFbKk8WtMy3mQVvhR3XH6c3DqPcXqk6wUqFXZk6snYgsApQnBDzUicK1bWj34ucNpmUFgAjBHhjxNlTTJjUsulL0T4u7mXyZR1XZg304aENMTpcK7rLQWRUauwG5uopb4k9WNxKKZOoNA32robkIsAchhwpg3R4KbjeVXD24BhJWq2t4ZI8RTd5SxcPh6sR8FqRC5PzX3MDGR3JERd9MvJDdArkXHZuP13kIWQg3whIRhxqZh8ziM70IsrEMplmMfOfC1OGFn8bLclhD&union_lens=lensId%3AAPP%401584715596%400b0b7487_0fac_170f8690329_bf19%400245SyuCztufqogHwsvXW7LU" target="_blank">                           饿了么测试 Chen </a>
-     <p> &nbsp; 
-</td>
-</tr>
+          <tr align="middle" bgcolor="#f8efce">
+            <td class="TDColor" >
 
+            <div id="DPhd1" class="DPhdColor"></div>
+            <script>renderGlobalText("DPhd1");</script> 
 
-
-
-<tr>
-<td> <p> &nbsp;  
-     <p style="text-align: center"> <a href="https://mp3.cxinz.com" target="_blank">               ★陳心做音乐点播★ </a>
-     <p> &nbsp; 
-</td>
-</tr>
-     
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.1zhe.com")' target="_self">           登录一折 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.1zhe.com/yq/983350")' target="_self"> 注册一折 开启挣钱 </a> 
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.wozheka.com/user/center.php")' target="_self"> 登录折卡 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.wozheka.com/?rec=179288")' target="_self">     注册折卡 开启挣钱 </a> 
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.baobeizhe.com")' target="_self">                      登录贝折 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.baobeizhe.com/index.php?rec=230606")' target="_self"> 注册贝折 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://user.hfzhe.com")' target="_self">                         登录H折 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.hfzhe.com/index.php?rec=V1MLVVNWAQ")' target="_self"> 注册H折 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://uz.lecu8.com/my-jifen.html")' target="_self">             登录U站 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://uz.lecu8.com/y-LuRub")' target="_self">                   注册U站 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.liqu.com")' target="_self">                           登录利趣 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.liqu.com/tg/share?gid=a0effd74-5155-4e3c-ad1b-16032faeea19&shareQd=url&inviteUser=2459715")' target="_self">                                                                                         注册利趣 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.huicoco.com/index.php?mod=user&act=index")' target="_self"> 登录惠橙 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.huicoco.com/index.php?rec=AwAIBlA%3D")' target="_self">     注册惠橙 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://user.taokoukou.com/pay-apply.html")' target="_self">            登录淘扣 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.taokoukou.com/invite-u-friend-mnvtv.html")' target="_self"> 注册淘扣 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.wahuasuan.com/?m=user&a=jifenbao")' target="_self">         登录挖划 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://wahuasuan.6616183.cn/?id=557762")' target="_self">              注册挖划 开启挣钱 </a>
-     <p> &nbsp; 
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.egou.com/club/qiandao")' target="_self">                    登录易购 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://jifen.egou.com/hd/2011/jfbhiteggs/index.htm?inviterId=2734466")' target="_self">                                                                                                                                    注册易购 开启挣钱 </a>
-     <p> &nbsp;                                                                                                                           
-</td>
-</tr>
-
-
-<tr>
-<td> <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.57zhe.com")' target="_self">                                登录七折 开启挣钱 </a>
-     <p> &nbsp; 
-     <p style="text-align: center"> <a href='javascript:chgFrame("http://www.57zhe.com/#ZHE3Ee6")' target="_self">                       注册七折 开启挣钱 </a>
-     <p> &nbsp;
-</td>
-</tr>
-
-
-
-</table>
-
-</div>
+          </td>
 
 
 
 
-<div id="content"> 
+          <!--  抖音1活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+          <td style="font-size: 0;" class="TDColor"> 
 
-<iframe width=100% height=100% id="myfrm" src="https://jf.alipay.com/prod/index.htm" name ="view_frame">  </iframe>
-<!-- <iframe width=100% height=100% id="myfrm" src="" name ="view_frame">  </iframe> -->
+
+       
+        <div id="DYhd1" class="DYhdColor" style="display: inline-block; vertical-align: baseline;  "></div>
+        <script>renderGlobalText("DYhd1");</script> 
+
+
+        <div  class="DYhdColor" style="display: inline-block; vertical-align: baseline; ">
+        <a href="https://www.douyin.com/user/MS4wLjABAAAAaZyfUwNmmtnMWdBi3rwtupo-dhOLvoWNAfNE3HsmrCM?from_tab_name=main" style="text-decoration: underline;">立即参加</a >
+        </div>
+
+   
+  
+
+        </td>
+
+
+
+
+
+
+
+
+
+            
+
+        <!--  美团1活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+         <td style="font-size: 0;" class="TDColor"> 
+
+
+       
+        <div id="MThd1" class="MThdColor" style="display: inline-block; vertical-align: baseline; "></div>
+        <script>renderGlobalText("MThd1");</script> 
+
+
+        <div class="MThdColor"  style="display: inline-block; vertical-align: baseline;  ">
+        <a href="https://cactivityapi-sc.waimai.meituan.com/h5/sub-trade/restaurant/restaurant?source=searchresult&poi_id_str=MFwhfEwnQ0S2cm5Ful-AKAI&poi_id=-100&initialLng=121.488606&initialLat=29.67663&channel=default&actualLng=121.488606&actualLat=29.67663" style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+
+
+        </td>
+
+
+
+
+
+
+
+     <!--  饿了么1活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+           <td style="font-size: 0;" class="TDColor"> 
+
+       
+
+        <div id="ELMhd1" class="ELMhdColor" style="display: inline-block; vertical-align: baseline; "></div>
+        <script>renderGlobalText("ELMhd1");</script> 
+
+
+        <div  class="ELMhdColor" style="display: inline-block; vertical-align: baseline;  ">
+        <a href="https://h5.ele.me/newretail/p/ushop/?store_id=20000034394&ele_id=E17210236292698947781&isSelfFetch=2&fetchType=2&trace_id=2147859217619750105534590e4243&venusSupplyChannelSource=b_ele%3Acommon_store_render&geolat=29.645315&geolng=121.402396&_trans_track_id=20000034394_0_930397093591867&hideNavbar=1&status_bar_transparent=true&disableNav=YES&spm=a2f6g.12273696.SuggestRestaurant.1&guideTrack=%257B%2522search_ab_bucket%2522%253A%2522a%2522%252C%2522search_tpp_buckets%2522%253A%252228820%25230%2523255357%252312_28820%252314775%2523456865%25233_28820%252326258%2523480297%252313_28820%252325617%2523478566%25237_28820%252325745%2523478804%25231_28820%252324768%2523475605%252315_18534%25230%2523413075%25239_18534%25232939%25238588%252310_18534%252359051%2523531153%252314_18534%252328309%2523485342%252310_18534%252326394%2523480328%25234%2522%252C%2522search_app_id%2522%253A28820%252C%2522alscJointAbTag%2522%253A%2522unknow%2522%252C%2522search_trace_id%2522%253A%25222147859217619750105534590e4243%2522%252C%2522personalizedDisable%2522%253Afalse%252C%2522search_rank_id%2522%253A%2522554552dfaa1b493b980cc15cdab34ddf%2522%257D&from=mobile.default&fromVersion=11.22.6&longitude=121.402396&latitude=29.645315&geohash=wtq2dsf82z78&spm-pre=a2f6g.12507204.search.1" target="_blank"  style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+
+
+        </td>
+
+
+
+          </tr>
+          <tr align="middle" bgcolor="#f8efce">
+          
+          <td style="font-size: 0;" class="TDColor">    
+
+
+            <div id="DPhd2" class="DPhdColor"></div>
+            <script>renderGlobalText("DPhd2");</script>
+
+
+            </div></td>
+
+
+
+
+
+
+              <!--  抖音2活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+           <td style="font-size: 0;" class="TDColor"> 
+
+
+
+       
+       <div id="DYhd2" class="DYhdColor" style="display: inline-block; vertical-align: baseline;  "></div>
+        <script>renderGlobalText("DYhd2");</script> 
+
+
+        <div  class="DYhdColor" style="display: inline-block; vertical-align: baseline; ">
+        <a href="https://www.douyin.com/user/MS4wLjABAAAAaZyfUwNmmtnMWdBi3rwtupo-dhOLvoWNAfNE3HsmrCM?from_tab_name=main" style="text-decoration: underline;">立即参加</a >
+        </div>
+
+   
+  
+
+        </td>
+
+
+
+
+
+
+
+
+          <!--  美团2活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+         <td style="font-size: 0;" class="TDColor"> 
+
+       
+        
+ 
+        <div id="MThd2" class="MThdColor" style="display: inline-block; vertical-align: baseline; "></div>
+        <script>renderGlobalText("MThd2");</script> 
+
+
+        <div class="MThdColor"  style="display: inline-block; vertical-align: baseline;  ">
+        <a href="https://cactivityapi-sc.waimai.meituan.com/h5/sub-trade/restaurant/restaurant?source=searchresult&poi_id_str=MFwhfEwnQ0S2cm5Ful-AKAI&poi_id=-100&initialLng=121.488606&initialLat=29.67663&channel=default&actualLng=121.488606&actualLat=29.67663" style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+
+        
+        </td>
+
+
+
+
+
+
+
+
+
+
+    <!--  饿了么2活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+           <td style="font-size: 0;" class="TDColor"> 
+
+
+       
+        <div id="ELMhd2" class="ELMhdColor" style="display: inline-block; vertical-align: baseline; "></div>
+        <script>renderGlobalText("ELMhd2");</script> 
+
+
+        <div  class="ELMhdColor" style="display: inline-block; vertical-align: baseline;  ">
+        <a href="https://h5.ele.me/newretail/p/ushop/?store_id=20000034394&ele_id=E17210236292698947781&isSelfFetch=2&fetchType=2&trace_id=2147859217619750105534590e4243&venusSupplyChannelSource=b_ele%3Acommon_store_render&geolat=29.645315&geolng=121.402396&_trans_track_id=20000034394_0_930397093591867&hideNavbar=1&status_bar_transparent=true&disableNav=YES&spm=a2f6g.12273696.SuggestRestaurant.1&guideTrack=%257B%2522search_ab_bucket%2522%253A%2522a%2522%252C%2522search_tpp_buckets%2522%253A%252228820%25230%2523255357%252312_28820%252314775%2523456865%25233_28820%252326258%2523480297%252313_28820%252325617%2523478566%25237_28820%252325745%2523478804%25231_28820%252324768%2523475605%252315_18534%25230%2523413075%25239_18534%25232939%25238588%252310_18534%252359051%2523531153%252314_18534%252328309%2523485342%252310_18534%252326394%2523480328%25234%2522%252C%2522search_app_id%2522%253A28820%252C%2522alscJointAbTag%2522%253A%2522unknow%2522%252C%2522search_trace_id%2522%253A%25222147859217619750105534590e4243%2522%252C%2522personalizedDisable%2522%253Afalse%252C%2522search_rank_id%2522%253A%2522554552dfaa1b493b980cc15cdab34ddf%2522%257D&from=mobile.default&fromVersion=11.22.6&longitude=121.402396&latitude=29.645315&geohash=wtq2dsf82z78&spm-pre=a2f6g.12507204.search.1" target="_blank"  style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+
+        </td>
+
+
+
+
+
+
+
+
+
+
+
+
+          </tr>
+
+
+          <tr align="middle" bgcolor="#f8efce">
+
+          <td style="font-size: 0;" class="TDColor"> 
+
+          <div align="center"><span class="STYLEC2">
+
+
+
+
+          <div id="DPhd3" class="DPhdColor"></div>
+          <script>renderGlobalText("DPhd3");</script>    
+
+
+            </div></td>
+
+
+
+
+
+          <!--  抖音3活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+          <td style="font-size: 0;" class="TDColor"> 
+
+
+
+
+       
+       <div id="DYhd3" class="DYhdColor" style="display: inline-block; vertical-align: baseline;  "></div>
+        <script>renderGlobalText("DYhd3");</script> 
+
+
+        <div  class="DYhdColor" style="display: inline-block; vertical-align: baseline; ">
+        <a href="https://www.douyin.com/user/MS4wLjABAAAAaZyfUwNmmtnMWdBi3rwtupo-dhOLvoWNAfNE3HsmrCM?from_tab_name=main" style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+   
+  
+
+        </td>
+
+
+
+
+
+
+
+        <!--  美团3活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+         <td style="font-size: 0;" class="TDColor"> 
+
+       
+
+
+ 
+        <div id="MThd3" class="MThdColor" style="display: inline-block; vertical-align: baseline; "></div>
+        <script>renderGlobalText("MThd3");</script> 
+
+
+        <div class="MThdColor"  style="display: inline-block; vertical-align: baseline;  ">
+        <a href="https://cactivityapi-sc.waimai.meituan.com/h5/sub-trade/restaurant/restaurant?source=searchresult&poi_id_str=MFwhfEwnQ0S2cm5Ful-AKAI&poi_id=-100&initialLng=121.488606&initialLat=29.67663&channel=default&actualLng=121.488606&actualLat=29.67663" style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+
+
+        </td>
+
+
+
+
+
+
+
+    <!--  饿了么3活动 开始设置 消除inline-block默认间距 链接容器：行内块+基线对齐 -->
+         <td style="font-size: 0;" class="TDColor"> 
+
+       
+
+
+
+        <div id="ELMhd3" class="ELMhdColor" style="display: inline-block; vertical-align: baseline; "></div>
+        <script>renderGlobalText("ELMhd3");</script> 
+
+
+        <div  class="ELMhdColor" style="display: inline-block; vertical-align: baseline;  ">
+        <a href="https://h5.ele.me/newretail/p/ushop/?store_id=20000034394&ele_id=E17210236292698947781&isSelfFetch=2&fetchType=2&trace_id=2147859217619750105534590e4243&venusSupplyChannelSource=b_ele%3Acommon_store_render&geolat=29.645315&geolng=121.402396&_trans_track_id=20000034394_0_930397093591867&hideNavbar=1&status_bar_transparent=true&disableNav=YES&spm=a2f6g.12273696.SuggestRestaurant.1&guideTrack=%257B%2522search_ab_bucket%2522%253A%2522a%2522%252C%2522search_tpp_buckets%2522%253A%252228820%25230%2523255357%252312_28820%252314775%2523456865%25233_28820%252326258%2523480297%252313_28820%252325617%2523478566%25237_28820%252325745%2523478804%25231_28820%252324768%2523475605%252315_18534%25230%2523413075%25239_18534%25232939%25238588%252310_18534%252359051%2523531153%252314_18534%252328309%2523485342%252310_18534%252326394%2523480328%25234%2522%252C%2522search_app_id%2522%253A28820%252C%2522alscJointAbTag%2522%253A%2522unknow%2522%252C%2522search_trace_id%2522%253A%25222147859217619750105534590e4243%2522%252C%2522personalizedDisable%2522%253Afalse%252C%2522search_rank_id%2522%253A%2522554552dfaa1b493b980cc15cdab34ddf%2522%257D&from=mobile.default&fromVersion=11.22.6&longitude=121.402396&latitude=29.645315&geohash=wtq2dsf82z78&spm-pre=a2f6g.12507204.search.1" target="_blank"  style="text-decoration: underline;">立即参加</a >
+        </div>
+
+
+
+        
+
+        </td>
+
+
+
+
+
+
+
+
+  
+          </tr>
+         
+        </tbody>
+      </table>
+
+
+
+
+
+
+      
+
+
+      </table>
+      <hr width="900">   <!-- 一条900白线 -->
+      <table width="910" border="0" align="center" bordercolor="#ffffff" bgcolor="#ffffff">
+        <tbody><tr>
+
+          <td height="0"><!-- 表体预留防错位 -->
+          <!--<p class="font-family: Arial, sans-serif; font-size: 25px;color: ##336334;"> 陳心做果业 地图位置导航</p> 表头+字-->
+          
+          
+
+          <img border="0" src="./1zcq.566mir.top_files/wx.png"  tppabs="wx.png" width="450" height="350" >
+
+
+
+          <a href="https://m.amap.com/poi/detail?__p=B0KA51DS36%2C29.651289420452134%2C121.44501686096193%2C%E9%99%B3%E5%BF%83%E5%81%9A%E6%9E%9C%E6%A5%ADCxinz.com%2C%E5%9C%A3%E5%A2%A9%E8%B7%AF64%E5%8F%B7&src=app_share&share_type=url&share_from=poi_poi&share_from_type=AJX&share_bizParams=%7B%22poiid%22%3A%22B0KA51DS36%22%2C%22trigger%22%3A%22click%22%7D&share_lastClickSpm=amap.27854080.tipBar_RenderPOITipBar.shareBtn&share_bid=tiksnqgom1c7v28jffcc2gh7mah87f392ee00f2&poiid=B0KA51DS36">
+          <img border="0" src="./1zcq.566mir.top_files/map.png" tppabs="map.png" width="450" height="350"></a>
+
+
+
+          
+        </td>      
+        </tr>
+        </tbody>
+        </table>
+
+
+
+
+      <hr width="910">
+      <!-- <table width="900" border="0" align="center" bordercolor="#ffffff" bgcolor="#ffffff"> 原MP3无底部预留188像素-->
+        <table style="width: 900px; margin: 0 auto 188px; background: #FFFFFF; border: none;">
+
+        <tbody><tr>
+
+          
+          <td height="0"> 
+            
+
+          <a href="https://mp3.cxinz.com">
+          <img border="0" src="./1zcq.566mir.top_files/MP3.png" tppabs="MP3.png" width="900" height="350"> </a>
+          <hr width="815">
+
+
+
+
+          </td>
+        </tr>
+      </tbody></table>
+      
+    </td>
+   </tr>
+  </tbody></table>
+
+
+
+<a    href="https://dn.com/zh-cn/sale/cxinz.com"  target="_blank"   style="display: inline-block; font-size: 28px; color: #bae823; text-decoration: none; text-align: center; width: 100%;">
+           © 2016.5.1 Now 陳心做官网 Cxinz.com  </a>
+
+
+
+<a href="http://www.51.la/?21991553" target="_blank" style="display: inline-block; font-size: 28px; color: #bae823; text-decoration: none; text-align: center; width: 100%; ">
+           🌓     </a>
+
+<a   href="https://whois.22.cn/cxinz.com"  target="_blank"   style="display: inline-block; font-size: 28px; color: #bae823; text-decoration: none; text-align: center; width: 100%;">
+            Consign China.ChenWangI  </a>
+
+
+
+
+
+<!--开始-授权-隐藏 51la授权 1885804*** --> 
+<div style="display:none">
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/21991553.js"></script>
+<noscript>
+<a href="http://www.51.la/?21991553" target="_blank"> <img alt="" src="http://img.users.51.la/21991553.asp" style="border:none" /> </a>
+</noscript>
 </div>
